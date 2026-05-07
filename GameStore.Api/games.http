@@ -1,0 +1,33 @@
+GET http://localhost:5034/games
+
+###
+
+GET http://localhost:5034/games/4
+
+###
+
+POST http://localhost:5034/games
+Content-Type: application/json
+
+{
+   "name": "Assassin's Creed Origins",
+   "genre": "Action-Adventure",
+   "price": 69.99,
+   "releaseDate": "2017-03-03"
+}
+
+###
+
+PUT http://localhost:5034/games/4
+Content-Type: application/json
+
+{
+   "name": "Assassin's Creed Valhalla",
+   "genre": "Action-Adventure",
+   "price": 59.99,
+   "releaseDate": "2020-11-10"
+}
+
+###
+
+DELETE http://localhost:5034/games/4
