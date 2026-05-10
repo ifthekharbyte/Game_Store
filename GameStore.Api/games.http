@@ -10,7 +10,7 @@ POST http://localhost:5034/games
 Content-Type: application/json
 
 {
-   "name": "Assassin's Creed Origins",
+   "name": "house of the dead 4",
    "genre": "Action-Adventure",
    "price": 69.99,
    "releaseDate": "2017-03-03"
@@ -22,9 +22,9 @@ PUT http://localhost:5034/games/4
 Content-Type: application/json
 
 {
-   "name": "Assassin's Creed Valhalla",
+   "name": "Assassin's Creed ValhallaAssassin's Creed ValhallaAssassin's Creed ValhallaAssassin's Creed ValhallaAssassin's Creed Valhalla",
    "genre": "Action-Adventure",
-   "price": 59.99,
+   "price": 559.99,
    "releaseDate": "2020-11-10"
 }
 
