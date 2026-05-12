@@ -1,15 +1,20 @@
 using GameStore.Api.Data;
 using GameStore.Api.Dtos;
+using GameStore.Api.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddValidation();
 
-builder.Services.AddSqlite<GameStoreContext>("Data Source=gamestore.db");
+builder.AddGameStoreDb();
+
+
 
 var app = builder.Build();
 
 
 app.MapGamesEndpoints();
+
+app.MigrateDb();
 
 app.Run();
